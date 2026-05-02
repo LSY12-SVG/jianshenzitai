@@ -22,6 +22,26 @@
 
 > 展示区依次为：电脑端真实分析 GIF、电脑端完整界面截图、手机端采集页截图。
 
+## 仓库内子项目
+
+当前仓库除了主项目 `健身姿态识别算法`，还附带一个独立维护的 Vue 前端子项目：
+
+- 子项目目录：`ai-fitness-web3-dashboard/`
+- 子项目说明：高保真 AI Fitness Web3 系统前端，包含训练总览、实时训练、动作分析、训练档案、训练计划、训练报告等界面
+- 子项目技术栈：`Vue 3 + Vite + Vue Router + Pinia + Axios Mock + ECharts`
+
+进入子项目目录后可单独运行：
+
+```bash
+cd ai-fitness-web3-dashboard
+npm install
+npm run dev
+```
+
+子项目详细文档见：
+
+- `ai-fitness-web3-dashboard/README.md`
+
 ## 项目亮点
 
 - 支持 `深蹲 / 俯卧撑 / 平板支撑 / 哑铃弯举` 4 类动作
@@ -179,6 +199,12 @@
 
 ```text
 .
+├─ ai-fitness-web3-dashboard/
+│  ├─ src/
+│  ├─ index.html
+│  ├─ package.json
+│  ├─ vite.config.js
+│  └─ README.md
 ├─ index.html
 ├─ mobile.html
 ├─ public/
