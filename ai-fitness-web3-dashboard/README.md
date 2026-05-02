@@ -19,6 +19,20 @@ AI Fitness Web3 系统前端项目。当前项目基于 `Vue 3 + Vite` 搭建，
 - 与真实接口对接前的前端预演
 - 后续扩展摄像头、动作识别、训练设备联动等业务能力
 
+## 界面预览
+
+### 训练总览页
+
+<p align="center">
+  <img src="../docs/images/ai-fitness-dashboard.png" alt="训练总览页界面截图" width="96%" />
+</p>
+
+### 实时训练页
+
+<p align="center">
+  <img src="../docs/images/ai-fitness-live-training.png" alt="实时训练页界面截图" width="96%" />
+</p>
+
 ## 技术栈
 
 ### 核心框架

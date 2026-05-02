@@ -42,6 +42,20 @@ npm run dev
 
 - `ai-fitness-web3-dashboard/README.md`
 
+子项目界面截图：
+
+### Dashboard 界面
+
+<p align="center">
+  <img src="./docs/images/ai-fitness-dashboard.png" alt="AI Fitness Web3 Dashboard 界面" width="92%" />
+</p>
+
+### Live Training 界面
+
+<p align="center">
+  <img src="./docs/images/ai-fitness-live-training.png" alt="AI Fitness Web3 Live Training 界面" width="92%" />
+</p>
+
 ## 项目亮点
 
 - 支持 `深蹲 / 俯卧撑 / 平板支撑 / 哑铃弯举` 4 类动作
