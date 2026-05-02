@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MediaPipe 姿态关键点验证</title>
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="hero">
+        <div>
+          <p class="eyebrow">MediaPipe Pose Landmarker</p>
+          <h1>人体姿态关键点实时验证页</h1>
+          <p class="subtitle">
+            调用前置摄像头，叠加 33 个姿态关键点和骨架连线，同时显示实时渲染 FPS、推理耗时和当前模型配置。
+          </p>
+        </div>
+        <div class="status-chip" id="camera-status">摄像头未启动</div>
+      </header>
+
+      <main class="layout">
+        <section class="panel controls-panel">
+          <h2>控制面板</h2>
+          <div class="control-grid">
+            <label>
+              <span>视频源</span>
+              <select id="source-select">
+                <option value="local" selected>本机前置摄像头</option>
+                <option value="remote">手机前摄远端接入</option>
+              </select>
+            </label>
+
+            <label>
+              <span>选择动作</span>
+              <select id="exercise-select">
+                <option value="squat" selected>深蹲</option>
+                <option value="pushup">俯卧撑</option>
+                <option value="plank">平板支撑</option>
+                <option value="curl">哑铃弯举</option>
+              </select>
+            </label>
+
+            <label>
+              <span>模型</span>
+              <select id="model-select">
+                <option value="lite">Lite</option>
+                <option value="full" selected>Full</option>
+                <option value="heavy">Heavy</option>
+              </select>
+            </label>
+
+            <label>
+              <span>检测阈值</span>
+              <input id="detection-threshold" type="range" min="0.1" max="0.9" step="0.05" value="0.5" />
+              <strong id="detection-threshold-value">0.50</strong>
+            </label>
+
+            <label>
+              <span>追踪阈值</span>
+              <input id="tracking-threshold" type="range" min="0.1" max="0.9" step="0.05" value="0.5" />
+              <strong id="tracking-threshold-value">0.50</strong>
+            </label>
+
+            <label class="checkbox-row">
+              <input id="mirror-toggle" type="checkbox" checked />
+              <span>镜像前置摄像头画面</span>
+            </label>
+
+            <label class="checkbox-row">
+              <input id="labels-toggle" type="checkbox" />
+              <span>显示关键点编号</span>
+            </label>
+          </div>
+
+          <div class="button-row">
+            <button id="start-button" class="primary">启动摄像头</button>
+            <button id="stop-button">停止摄像头</button>
+            <button id="reload-button">重新加载模型</button>
+            <button id="reset-action-button">重置全部统计</button>
+          </div>
+
+          <section class="remote-session-card" id="remote-session-card" hidden>
+            <div class="remote-session-header">
+              <div>
+                <p class="remote-session-eyebrow">Phone Link</p>
+                <h3>手机接入会话</h3>
+              </div>
+              <span class="remote-session-state" id="remote-session-status">未创建</span>
+            </div>
+
+            <div class="remote-session-grid">
+              <article>
+                <span>会话码</span>
+                <strong id="session-code">-</strong>
+              </article>
+              <article>
+                <span>连接状态</span>
+                <strong id="peer-status">等待创建</strong>
+              </article>
+            </div>
+
+            <div class="remote-qr-shell">
+              <img id="session-qr" alt="手机扫码接入二维码" />
+            </div>
+
+            <div class="remote-link-row">
+              <input id="session-link" type="text" readonly value="" />
+              <button id="copy-session-link-button" type="button">复制链接</button>
+            </div>
+
+            <p class="remote-session-tip" id="remote-session-tip">
+              切换到手机接入模式后，点击“创建手机会话”，用手机扫码打开采集页。
+            </p>
+          </section>
+
+          <p class="hint">
+            本机模式会直接调用电脑摄像头；手机模式会生成二维码让手机加入并把前置摄像头画面实时传到当前页面分析。
+          </p>
+        </section>
+
+        <section class="panel stage-panel">
+          <div class="stage-frame" id="stage-frame">
+            <video id="webcam" autoplay playsinline muted></video>
+            <canvas id="overlay"></canvas>
+          </div>
+        </section>
+
+        <section class="panel metrics-panel">
+          <h2>实时指标</h2>
+          <div class="metrics-grid">
+            <article>
+              <span>渲染 FPS</span>
+              <strong id="render-fps">0.0</strong>
+            </article>
+            <article>
+              <span>推理耗时</span>
+              <strong id="inference-ms">0.0 ms</strong>
+            </article>
+            <article>
+              <span>检测人数</span>
+              <strong id="pose-count">0</strong>
+            </article>
+            <article>
+              <span>关键点数量</span>
+              <strong id="landmark-count">0</strong>
+            </article>
+            <article>
+              <span>分辨率</span>
+              <strong id="video-resolution">-</strong>
+            </article>
+            <article>
+              <span>推理设备</span>
+              <strong id="delegate-label">GPU</strong>
+            </article>
+          </div>
+
+          <h2 class="section-title">动作识别</h2>
+          <div class="action-grid">
+            <article>
+              <span>分析动作</span>
+              <strong id="exercise-name">深蹲</strong>
+            </article>
+            <article>
+              <span>分析状态</span>
+              <strong id="action-status">等待开始</strong>
+            </article>
+            <article>
+              <span>动作次数 / 组数</span>
+              <strong id="action-progress">0 次</strong>
+            </article>
+            <article>
+              <span>当前频率 / 保持</span>
+              <strong id="action-completeness">-</strong>
+            </article>
+            <article>
+              <span>当前阶段</span>
+              <strong id="action-rate">-</strong>
+            </article>
+            <article>
+              <span>时间轴摘要</span>
+              <strong id="action-phase">待机</strong>
+            </article>
+          </div>
+
+          <h2 class="section-title">关键展示</h2>
+          <div class="focus-grid">
+            <article class="focus-card emphasis-card">
+              <span id="focus-count-label">动作次数</span>
+              <strong id="focus-count-value">0 次</strong>
+              <p id="focus-count-meta">选择一个动作后开始分析</p>
+            </article>
+            <article class="focus-card timeline-card">
+              <div class="timeline-header">
+                <span>时间频率轴</span>
+                <strong id="timeline-summary">等待数据</strong>
+              </div>
+              <div id="timeline-axis" class="timeline-axis"></div>
+            </article>
+          </div>
+
+          <div class="debug-grid">
+            <article>
+              <span id="debug-1-label">指标 1</span>
+              <strong id="debug-1-value">-</strong>
+            </article>
+            <article>
+              <span id="debug-2-label">指标 2</span>
+              <strong id="debug-2-value">-</strong>
+            </article>
+            <article>
+              <span id="debug-3-label">指标 3</span>
+              <strong id="debug-3-value">-</strong>
+            </article>
+            <article>
+              <span id="debug-4-label">指标 4</span>
+              <strong id="debug-4-value">-</strong>
+            </article>
+          </div>
+
+          <h2 class="section-title">时序特征</h2>
+          <div class="feature-grid">
+            <article>
+              <span>关键点序列</span>
+              <strong id="temporal-sequence">-</strong>
+            </article>
+            <article>
+              <span>关节角度序列</span>
+              <strong id="temporal-angles">-</strong>
+            </article>
+            <article>
+              <span>关键点速度</span>
+              <strong id="temporal-velocity">-</strong>
+            </article>
+            <article>
+              <span>重心变化</span>
+              <strong id="temporal-center">-</strong>
+            </article>
+            <article>
+              <span>腕部轨迹</span>
+              <strong id="temporal-wrist">-</strong>
+            </article>
+            <article>
+              <span>身体朝向</span>
+              <strong id="temporal-orientation">-</strong>
+            </article>
+            <article>
+              <span>动作方向</span>
+              <strong id="temporal-direction">-</strong>
+            </article>
+            <article>
+              <span>器械辅助信息</span>
+              <strong id="temporal-equipment">未启用</strong>
+            </article>
+          </div>
+
+          <div class="rule-note" id="rule-note">
+            深蹲规则：髋部高度周期性下降和上升，膝关节角度先变小再变大，肩部位置相对稳定。
+          </div>
+          <div class="log-box" id="log-box">等待初始化...</div>
+        </section>
+      </main>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+  </html>

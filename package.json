@@ -1,0 +1,25 @@
+{
+  "name": "mediapipe-pose-web-demo",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:signal\" \"npm run dev:client\"",
+    "dev:client": "vite",
+    "dev:signal": "node server/index.js",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "serve": "node server/index.js"
+  },
+  "dependencies": {
+    "@mediapipe/tasks-vision": "^0.10.35",
+    "express": "^4.21.2",
+    "qrcode": "^1.5.4",
+    "selfsigned": "^3.0.1",
+    "ws": "^8.18.3"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "vite": "^8.0.10"
+  }
+}

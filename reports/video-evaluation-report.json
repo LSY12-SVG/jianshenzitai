@@ -1,0 +1,860 @@
+{
+  "generatedAt": "2026-05-02T15:12:27.510Z",
+  "options": {
+    "sampleFps": 12
+  },
+  "summary": {
+    "totalVideos": 4,
+    "averagePoseCoverage": 0.9972945609258337,
+    "averageFirstEventSeconds": 4.125000000000002,
+    "labeledCountVideos": 0,
+    "totalFalsePositives": 0,
+    "totalMissed": 0
+  },
+  "results": [
+    {
+      "name": "深蹲.mp4",
+      "videoUrl": "http://127.0.0.1:5173/%E6%B7%B1%E8%B9%B2.mp4",
+      "expectedExercise": "squat",
+      "analyzedExercise": "squat",
+      "expectedCount": null,
+      "durationSeconds": 21.917834,
+      "sampleFps": 12,
+      "sampledFrames": 264,
+      "poseFrames": 264,
+      "poseCoverage": 1,
+      "detectedCount": 12,
+      "firstEventSeconds": 2.083333333333333,
+      "falsePositiveCount": null,
+      "missedCount": null,
+      "summary": {
+        "reps": 12,
+        "cadenceRpm": 34.285714285714285,
+        "cadenceText": "34.3 次/分",
+        "falsePositiveCount": null,
+        "missedCount": null
+      },
+      "timeline": [
+        {
+          "second": 0,
+          "count": 0,
+          "cadenceRpm": 0,
+          "calibrationStatus": "等待校准",
+          "phase": "站立阶段",
+          "phaseSummary": "等待首次计数"
+        },
+        {
+          "second": 1,
+          "count": 0,
+          "cadenceRpm": 0,
+          "calibrationStatus": "基线校准中 0.9 / 1.6 s",
+          "phase": "站立阶段",
+          "phaseSummary": "等待首次计数"
+        },
+        {
+          "second": 2,
+          "count": 0,
+          "cadenceRpm": 0,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "下蹲阶段",
+          "phaseSummary": "等待首次计数"
+        },
+        {
+          "second": 3,
+          "count": 1,
+          "cadenceRpm": 0,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "站立阶段",
+          "phaseSummary": "已记录 1 次事件"
+        },
+        {
+          "second": 4,
+          "count": 2,
+          "cadenceRpm": 35.99999999999999,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "站立阶段",
+          "phaseSummary": "已记录 2 次事件"
+        },
+        {
+          "second": 5,
+          "count": 2,
+          "cadenceRpm": 35.99999999999999,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "下蹲阶段",
+          "phaseSummary": "已记录 2 次事件"
+        },
+        {
+          "second": 6,
+          "count": 3,
+          "cadenceRpm": 36,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "站立阶段",
+          "phaseSummary": "已记录 3 次事件"
+        },
+        {
+          "second": 7,
+          "count": 3,
+          "cadenceRpm": 36,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "下蹲阶段",
+          "phaseSummary": "已记录 3 次事件"
+        },
+        {
+          "second": 8,
+          "count": 4,
+          "cadenceRpm": 35.40983606557377,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "站立阶段",
+          "phaseSummary": "已记录 4 次事件"
+        },
+        {
+          "second": 9,
+          "count": 5,
+          "cadenceRpm": 35.55555555555556,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "站立阶段",
+          "phaseSummary": "已记录 5 次事件"
+        },
+        {
+          "second": 10,
+          "count": 5,
+          "cadenceRpm": 35.55555555555556,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "下蹲阶段",
+          "phaseSummary": "已记录 5 次事件"
+        },
+        {
+          "second": 11,
+          "count": 6,
+          "cadenceRpm": 35.64356435643564,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "站立阶段",
+          "phaseSummary": "已记录 6 次事件"
+        },
+        {
+          "second": 12,
+          "count": 6,
+          "cadenceRpm": 35.64356435643564,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "下蹲阶段",
+          "phaseSummary": "已记录 6 次事件"
+        },
+        {
+          "second": 13,
+          "count": 7,
+          "cadenceRpm": 35.294117647058826,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "站立阶段",
+          "phaseSummary": "已记录 7 次事件"
+        },
+        {
+          "second": 14,
+          "count": 8,
+          "cadenceRpm": 35.294117647058826,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "站立阶段",
+          "phaseSummary": "已记录 8 次事件"
+        },
+        {
+          "second": 15,
+          "count": 8,
+          "cadenceRpm": 35.294117647058826,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "下蹲阶段",
+          "phaseSummary": "已记录 8 次事件"
+        },
+        {
+          "second": 16,
+          "count": 9,
+          "cadenceRpm": 35.64356435643565,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "站立阶段",
+          "phaseSummary": "已记录 9 次事件"
+        },
+        {
+          "second": 17,
+          "count": 9,
+          "cadenceRpm": 35.64356435643565,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "下蹲阶段",
+          "phaseSummary": "已记录 9 次事件"
+        },
+        {
+          "second": 18,
+          "count": 10,
+          "cadenceRpm": 35.294117647058826,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "站立阶段",
+          "phaseSummary": "已记录 10 次事件"
+        },
+        {
+          "second": 19,
+          "count": 10,
+          "cadenceRpm": 35.294117647058826,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "下蹲阶段",
+          "phaseSummary": "已记录 10 次事件"
+        },
+        {
+          "second": 20,
+          "count": 11,
+          "cadenceRpm": 34.285714285714285,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "站立阶段",
+          "phaseSummary": "已记录 11 次事件"
+        },
+        {
+          "second": 21,
+          "count": 12,
+          "cadenceRpm": 34.285714285714285,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "站立阶段",
+          "phaseSummary": "已记录 12 次事件"
+        }
+      ]
+    },
+    {
+      "name": "俯卧撑.mp4",
+      "videoUrl": "http://127.0.0.1:5173/%E4%BF%AF%E5%8D%A7%E6%92%91.mp4",
+      "expectedExercise": "pushup",
+      "analyzedExercise": "pushup",
+      "expectedCount": null,
+      "durationSeconds": 25.898646,
+      "sampleFps": 12,
+      "sampledFrames": 311,
+      "poseFrames": 310,
+      "poseCoverage": 0.9967845659163987,
+      "detectedCount": 26,
+      "firstEventSeconds": 1.4166666666666679,
+      "falsePositiveCount": null,
+      "missedCount": null,
+      "summary": {
+        "reps": 26,
+        "cadenceRpm": 48,
+        "cadenceText": "48.0 次/分",
+        "falsePositiveCount": null,
+        "missedCount": null
+      },
+      "timeline": [
+        {
+          "second": 0,
+          "count": 0,
+          "cadenceRpm": 0,
+          "calibrationStatus": "基线校准中 0.0 / 1.6 s",
+          "phase": "撑起阶段",
+          "phaseSummary": "等待首次计数"
+        },
+        {
+          "second": 1,
+          "count": 0,
+          "cadenceRpm": 0,
+          "calibrationStatus": "基线校准中 0.9 / 1.6 s",
+          "phase": "下压阶段",
+          "phaseSummary": "等待首次计数"
+        },
+        {
+          "second": 2,
+          "count": 1,
+          "cadenceRpm": 0,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "下压阶段",
+          "phaseSummary": "已记录 1 次事件"
+        },
+        {
+          "second": 3,
+          "count": 2,
+          "cadenceRpm": 65.45454545454564,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "下压阶段",
+          "phaseSummary": "已记录 2 次事件"
+        },
+        {
+          "second": 4,
+          "count": 3,
+          "cadenceRpm": 65.4545454545455,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "下压阶段",
+          "phaseSummary": "已记录 3 次事件"
+        },
+        {
+          "second": 5,
+          "count": 5,
+          "cadenceRpm": 68.57142857142857,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "下压阶段",
+          "phaseSummary": "已记录 5 次事件"
+        },
+        {
+          "second": 6,
+          "count": 6,
+          "cadenceRpm": 69.23076923076924,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "下压阶段",
+          "phaseSummary": "已记录 6 次事件"
+        },
+        {
+          "second": 7,
+          "count": 7,
+          "cadenceRpm": 69.2307692307692,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "下压阶段",
+          "phaseSummary": "已记录 7 次事件"
+        },
+        {
+          "second": 8,
+          "count": 8,
+          "cadenceRpm": 70.58823529411765,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "下压阶段",
+          "phaseSummary": "已记录 8 次事件"
+        },
+        {
+          "second": 9,
+          "count": 9,
+          "cadenceRpm": 69.2307692307692,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "下压阶段",
+          "phaseSummary": "已记录 9 次事件"
+        },
+        {
+          "second": 10,
+          "count": 10,
+          "cadenceRpm": 69.23076923076924,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "下压阶段",
+          "phaseSummary": "已记录 10 次事件"
+        },
+        {
+          "second": 11,
+          "count": 12,
+          "cadenceRpm": 69.2307692307692,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "撑起阶段",
+          "phaseSummary": "已记录 12 次事件"
+        },
+        {
+          "second": 12,
+          "count": 13,
+          "cadenceRpm": 69.23076923076924,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "下压阶段",
+          "phaseSummary": "已记录 13 次事件"
+        },
+        {
+          "second": 13,
+          "count": 14,
+          "cadenceRpm": 70.58823529411765,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "下压阶段",
+          "phaseSummary": "已记录 14 次事件"
+        },
+        {
+          "second": 14,
+          "count": 15,
+          "cadenceRpm": 70.58823529411758,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "下压阶段",
+          "phaseSummary": "已记录 15 次事件"
+        },
+        {
+          "second": 15,
+          "count": 16,
+          "cadenceRpm": 70.58823529411765,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "下压阶段",
+          "phaseSummary": "已记录 16 次事件"
+        },
+        {
+          "second": 16,
+          "count": 17,
+          "cadenceRpm": 69.23076923076931,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "下压阶段",
+          "phaseSummary": "已记录 17 次事件"
+        },
+        {
+          "second": 17,
+          "count": 18,
+          "cadenceRpm": 67.92452830188672,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "下压阶段",
+          "phaseSummary": "已记录 18 次事件"
+        },
+        {
+          "second": 18,
+          "count": 20,
+          "cadenceRpm": 66.66666666666667,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "撑起阶段",
+          "phaseSummary": "已记录 20 次事件"
+        },
+        {
+          "second": 19,
+          "count": 21,
+          "cadenceRpm": 66.66666666666677,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "下压阶段",
+          "phaseSummary": "已记录 21 次事件"
+        },
+        {
+          "second": 20,
+          "count": 21,
+          "cadenceRpm": 66.66666666666677,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "下压阶段",
+          "phaseSummary": "已记录 21 次事件"
+        },
+        {
+          "second": 21,
+          "count": 22,
+          "cadenceRpm": 58.0645161290322,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "下压阶段",
+          "phaseSummary": "已记录 22 次事件"
+        },
+        {
+          "second": 22,
+          "count": 23,
+          "cadenceRpm": 58.06451612903236,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "下压阶段",
+          "phaseSummary": "已记录 23 次事件"
+        },
+        {
+          "second": 23,
+          "count": 24,
+          "cadenceRpm": 52.173913043478265,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "下压阶段",
+          "phaseSummary": "已记录 24 次事件"
+        },
+        {
+          "second": 24,
+          "count": 25,
+          "cadenceRpm": 51.42857142857147,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "下压阶段",
+          "phaseSummary": "已记录 25 次事件"
+        },
+        {
+          "second": 25,
+          "count": 25,
+          "cadenceRpm": 51.42857142857147,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "下压阶段",
+          "phaseSummary": "已记录 25 次事件"
+        }
+      ]
+    },
+    {
+      "name": "平板支撑.mp4",
+      "videoUrl": "http://127.0.0.1:5173/%E5%B9%B3%E6%9D%BF%E6%94%AF%E6%92%91.mp4",
+      "expectedExercise": "plank",
+      "analyzedExercise": "plank",
+      "expectedCount": null,
+      "durationSeconds": 21.546646,
+      "sampleFps": 12,
+      "sampledFrames": 259,
+      "poseFrames": 258,
+      "poseCoverage": 0.9961389961389961,
+      "detectedCount": 1,
+      "firstEventSeconds": 4.583333333333336,
+      "falsePositiveCount": null,
+      "missedCount": null,
+      "summary": {
+        "holdCount": 1,
+        "bestHoldSeconds": 12.249999999999993,
+        "currentHoldSeconds": 0.75,
+        "falsePositiveCount": null,
+        "missedCount": null
+      },
+      "timeline": [
+        {
+          "second": 0,
+          "count": 0,
+          "cadenceRpm": 0,
+          "calibrationStatus": "基线校准中 0.0 / 1.6 s",
+          "phase": "待稳定",
+          "phaseSummary": "等待首次保持"
+        },
+        {
+          "second": 1,
+          "count": 0,
+          "cadenceRpm": 0,
+          "calibrationStatus": "基线校准中 1.0 / 1.6 s",
+          "phase": "待稳定",
+          "phaseSummary": "等待首次保持"
+        },
+        {
+          "second": 2,
+          "count": 0,
+          "cadenceRpm": 0,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "待稳定",
+          "phaseSummary": "等待首次保持"
+        },
+        {
+          "second": 3,
+          "count": 0,
+          "cadenceRpm": 0,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "待稳定",
+          "phaseSummary": "等待首次保持"
+        },
+        {
+          "second": 4,
+          "count": 0,
+          "cadenceRpm": 0,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "待稳定",
+          "phaseSummary": "等待首次保持"
+        },
+        {
+          "second": 5,
+          "count": 0,
+          "cadenceRpm": 0,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "保持中",
+          "phaseSummary": "等待首次保持"
+        },
+        {
+          "second": 6,
+          "count": 0,
+          "cadenceRpm": 0,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "保持中",
+          "phaseSummary": "等待首次保持"
+        },
+        {
+          "second": 7,
+          "count": 0,
+          "cadenceRpm": 0,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "保持中",
+          "phaseSummary": "等待首次保持"
+        },
+        {
+          "second": 8,
+          "count": 0,
+          "cadenceRpm": 0,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "保持中",
+          "phaseSummary": "等待首次保持"
+        },
+        {
+          "second": 9,
+          "count": 0,
+          "cadenceRpm": 0,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "保持中",
+          "phaseSummary": "等待首次保持"
+        },
+        {
+          "second": 10,
+          "count": 0,
+          "cadenceRpm": 0,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "保持中",
+          "phaseSummary": "等待首次保持"
+        },
+        {
+          "second": 11,
+          "count": 0,
+          "cadenceRpm": 0,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "保持中",
+          "phaseSummary": "等待首次保持"
+        },
+        {
+          "second": 12,
+          "count": 0,
+          "cadenceRpm": 0,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "保持中",
+          "phaseSummary": "等待首次保持"
+        },
+        {
+          "second": 13,
+          "count": 0,
+          "cadenceRpm": 0,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "保持中",
+          "phaseSummary": "等待首次保持"
+        },
+        {
+          "second": 14,
+          "count": 0,
+          "cadenceRpm": 0,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "保持中",
+          "phaseSummary": "等待首次保持"
+        },
+        {
+          "second": 15,
+          "count": 0,
+          "cadenceRpm": 0,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "保持中",
+          "phaseSummary": "等待首次保持"
+        },
+        {
+          "second": 16,
+          "count": 0,
+          "cadenceRpm": 0,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "保持中",
+          "phaseSummary": "等待首次保持"
+        },
+        {
+          "second": 17,
+          "count": 1,
+          "cadenceRpm": 0,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "待稳定",
+          "phaseSummary": "已记录 1 段保持"
+        },
+        {
+          "second": 18,
+          "count": 1,
+          "cadenceRpm": 0,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "待稳定",
+          "phaseSummary": "已记录 1 段保持"
+        },
+        {
+          "second": 19,
+          "count": 1,
+          "cadenceRpm": 0,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "待稳定",
+          "phaseSummary": "已记录 1 段保持"
+        },
+        {
+          "second": 20,
+          "count": 1,
+          "cadenceRpm": 0,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "待稳定",
+          "phaseSummary": "已记录 1 段保持"
+        },
+        {
+          "second": 21,
+          "count": 1,
+          "cadenceRpm": 0,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "保持中",
+          "phaseSummary": "已记录 1 段保持"
+        }
+      ]
+    },
+    {
+      "name": "哑铃弯举.mp4",
+      "videoUrl": "http://127.0.0.1:5173/%E5%93%91%E9%93%83%E5%BC%AF%E4%B8%BE.mp4",
+      "expectedExercise": "curl",
+      "analyzedExercise": "curl",
+      "expectedCount": null,
+      "durationSeconds": 22.207979,
+      "sampleFps": 12,
+      "sampledFrames": 267,
+      "poseFrames": 266,
+      "poseCoverage": 0.9962546816479401,
+      "detectedCount": 8,
+      "firstEventSeconds": 8.416666666666671,
+      "falsePositiveCount": null,
+      "missedCount": null,
+      "summary": {
+        "reps": 8,
+        "cadenceRpm": 30.76923076923077,
+        "cadenceText": "30.8 次/分",
+        "falsePositiveCount": null,
+        "missedCount": null
+      },
+      "timeline": [
+        {
+          "second": 0,
+          "count": 0,
+          "cadenceRpm": 0,
+          "calibrationStatus": "基线校准中 0.0 / 1.6 s",
+          "phase": "弯举阶段",
+          "phaseSummary": "等待首次计数"
+        },
+        {
+          "second": 1,
+          "count": 0,
+          "cadenceRpm": 0,
+          "calibrationStatus": "基线校准中 0.9 / 1.6 s",
+          "phase": "弯举阶段",
+          "phaseSummary": "等待首次计数"
+        },
+        {
+          "second": 2,
+          "count": 0,
+          "cadenceRpm": 0,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "弯举阶段",
+          "phaseSummary": "等待首次计数"
+        },
+        {
+          "second": 3,
+          "count": 0,
+          "cadenceRpm": 0,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "弯举阶段",
+          "phaseSummary": "等待首次计数"
+        },
+        {
+          "second": 4,
+          "count": 0,
+          "cadenceRpm": 0,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "弯举阶段",
+          "phaseSummary": "等待首次计数"
+        },
+        {
+          "second": 5,
+          "count": 0,
+          "cadenceRpm": 0,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "弯举阶段",
+          "phaseSummary": "等待首次计数"
+        },
+        {
+          "second": 6,
+          "count": 0,
+          "cadenceRpm": 0,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "弯举阶段",
+          "phaseSummary": "等待首次计数"
+        },
+        {
+          "second": 7,
+          "count": 0,
+          "cadenceRpm": 0,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "弯举阶段",
+          "phaseSummary": "等待首次计数"
+        },
+        {
+          "second": 8,
+          "count": 0,
+          "cadenceRpm": 0,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "弯举阶段",
+          "phaseSummary": "等待首次计数"
+        },
+        {
+          "second": 9,
+          "count": 1,
+          "cadenceRpm": 0,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "下放阶段",
+          "phaseSummary": "已记录 1 次事件"
+        },
+        {
+          "second": 10,
+          "count": 1,
+          "cadenceRpm": 0,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "弯举阶段",
+          "phaseSummary": "已记录 1 次事件"
+        },
+        {
+          "second": 11,
+          "count": 2,
+          "cadenceRpm": 30,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "弯举阶段",
+          "phaseSummary": "已记录 2 次事件"
+        },
+        {
+          "second": 12,
+          "count": 2,
+          "cadenceRpm": 30,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "弯举阶段",
+          "phaseSummary": "已记录 2 次事件"
+        },
+        {
+          "second": 13,
+          "count": 3,
+          "cadenceRpm": 32.72727272727281,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "下放阶段",
+          "phaseSummary": "已记录 3 次事件"
+        },
+        {
+          "second": 14,
+          "count": 3,
+          "cadenceRpm": 32.72727272727281,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "下放阶段",
+          "phaseSummary": "已记录 3 次事件"
+        },
+        {
+          "second": 15,
+          "count": 4,
+          "cadenceRpm": 29.189189189189236,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "下放阶段",
+          "phaseSummary": "已记录 4 次事件"
+        },
+        {
+          "second": 16,
+          "count": 4,
+          "cadenceRpm": 29.189189189189236,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "弯举阶段",
+          "phaseSummary": "已记录 4 次事件"
+        },
+        {
+          "second": 17,
+          "count": 5,
+          "cadenceRpm": 30.96774193548393,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "下放阶段",
+          "phaseSummary": "已记录 5 次事件"
+        },
+        {
+          "second": 18,
+          "count": 5,
+          "cadenceRpm": 30.96774193548393,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "下放阶段",
+          "phaseSummary": "已记录 5 次事件"
+        },
+        {
+          "second": 19,
+          "count": 6,
+          "cadenceRpm": 28.80000000000003,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "下放阶段",
+          "phaseSummary": "已记录 6 次事件"
+        },
+        {
+          "second": 20,
+          "count": 6,
+          "cadenceRpm": 28.80000000000003,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "弯举阶段",
+          "phaseSummary": "已记录 6 次事件"
+        },
+        {
+          "second": 21,
+          "count": 7,
+          "cadenceRpm": 29.752066115702494,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "下放阶段",
+          "phaseSummary": "已记录 7 次事件"
+        },
+        {
+          "second": 22,
+          "count": 8,
+          "cadenceRpm": 30.76923076923077,
+          "calibrationStatus": "已完成基线校准",
+          "phase": "下放阶段",
+          "phaseSummary": "已记录 8 次事件"
+        }
+      ]
+    }
+  ]
+}

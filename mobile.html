@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>手机前摄采集页</title>
+  </head>
+  <body class="mobile-page">
+    <main class="mobile-shell">
+      <section class="mobile-hero">
+        <p class="eyebrow">Remote Capture</p>
+        <h1>手机前摄采集</h1>
+        <p class="subtitle">
+          本页只负责采集手机摄像头并把视频流实时传给电脑端做姿态分析。
+        </p>
+      </section>
+
+      <section class="mobile-panel">
+        <div class="mobile-status-row">
+          <span class="status-chip" id="mobile-status">等待接入</span>
+          <span class="mobile-session-code" id="mobile-session-code">会话码 -</span>
+        </div>
+
+        <div class="mobile-stage">
+          <video id="mobile-preview" autoplay playsinline muted></video>
+        </div>
+
+        <div class="mobile-metrics">
+          <article>
+            <span>采集状态</span>
+            <strong id="mobile-stream-state">未启动</strong>
+          </article>
+          <article>
+            <span>网络状态</span>
+            <strong id="mobile-network-state">待连接</strong>
+          </article>
+        </div>
+
+        <div class="button-row mobile-button-row">
+          <button id="mobile-start-button" class="primary">启动前摄推流</button>
+          <button id="mobile-stop-button">停止推流</button>
+          <button id="mobile-switch-camera-button">切换前后摄</button>
+        </div>
+
+        <div class="log-box" id="mobile-log-box">
+          等待初始化...
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="/src/mobile.js"></script>
+  </body>
+</html>
