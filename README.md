@@ -13,10 +13,14 @@
 </p>
 
 <p align="center">
+  <img src="./docs/images/desktop-analysis.png" alt="电脑端完整项目界面截图" width="78%" />
+</p>
+
+<p align="center">
   <img src="./docs/images/mobile-capture.png" alt="手机端采集页" width="28%" />
 </p>
 
-> 顶部 GIF 为系统使用示例视频驱动后的真实分析演示；下方为手机端采集页静态截图。
+> 展示区依次为：电脑端真实分析 GIF、电脑端完整界面截图、手机端采集页截图。
 
 ## 项目亮点
 
